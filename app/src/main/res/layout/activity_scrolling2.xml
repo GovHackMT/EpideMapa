@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.lucasnildaimon.govhackapp.TelaInfoTuberculose">
+
+        //Layout da tela de Tuberculose
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+            </android.support.v7.widget.Toolbar>
+
+
+            //Layout da tela com informações da tuberculose
+            <TextView
+                android:text="Tuberculose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="28sp"
+                android:id="@+id/textView" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+        <ImageView
+            android:layout_width="700px"
+            android:layout_height="700px"
+            app:srcCompat="@drawable/tuberculose"
+            android:id="@+id/imageView"
+            android:layout_marginTop="65dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:text="A transmissão da tuberculose é direta, de pessoa a pessoa, portanto, a aglomeração de pessoas é o principal fator de transmissão."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textSize="18sp"
+            android:id="@+id/textView8"
+            android:layout_marginTop="11dp"
+            android:layout_below="@+id/textView6"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Transmissão:"
+            android:layout_width="wrap_content"
+            android:gravity="left"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6"
+            android:layout_below="@+id/imageView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="O tratamento da tuberculose é feito à base de antibióticos. É importante o paciente ter acompanhamento médico."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView10"
+            android:textSize="18sp"
+            android:layout_below="@+id/textView9"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="11dp" />
+
+        <TextView
+            android:text="Profilaxia:"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:id="@+id/textView9"
+            android:layout_below="@+id/textView8"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Tosse seca contínua no início, depois com presença de secreção; cansaço, sudorese noturna, falta de apetite, palidez, fraqueza. Casos graves:dificuldade de respiração, eliminação de grande quantidade de sangue."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView13"
+            android:textSize="18sp"
+            android:layout_below="@+id/textView11"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="17dp" />
+
+        <TextView
+            android:text="Sintomas:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/textView11"
+            android:layout_marginTop="11dp"
+            android:layout_below="@+id/textView10"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Descrição:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/textView14"
+            android:layout_marginTop="11dp"
+            android:layout_below="@+id/textView13"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="A tuberculose é uma doença infecto-contagiosa causada por uma bactéria que afeta principalmente os pulmões, mas também pode ocorrer em outros órgãos do corpo, como ossos, rins e meninges (membranas que envolvem o cérebro)."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView15"
+            android:textSize="18sp"
+            android:layout_marginTop="11dp"
+            android:layout_below="@+id/textView14"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:text="Mapa de Postos de Saúde"
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/textView15"
+            android:textSize="22sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="33dp"
+            android:id="@+id/button5" />
+
+    </RelativeLayout>
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

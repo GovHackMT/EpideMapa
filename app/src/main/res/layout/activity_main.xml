@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.lucasnildaimon.govhackapp.TelaInicial">
+
+
+    //Layout da Página Principal
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+       <TextView
+        android:text="EpideMapa"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:id="@+id/textView" />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main"
+        android:id="@+id/include" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="Informe-se sobre as doenças"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="108dp" />
+
+        <Button
+            android:text="Tuberculose"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:id="@+id/button4"
+            android:layout_marginTop="52dp"
+            android:layout_alignTop="@+id/textView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:text="Dengue"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:id="@+id/button3"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:text="Mapa Epidemiológico"
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:id="@+id/button2"
+            android:backgroundTint="@android:color/holo_blue_light"
+            app:layout_anchorGravity="bottom|center_horizontal"
+            android:textSize="20sp"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_below="@+id/button3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="41dp" />
+
+        <Button
+            android:text="Mapa de Postos de Saúde"
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/button2"
+            android:textSize="22sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="33dp"
+            android:id="@+id/button5" />
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
